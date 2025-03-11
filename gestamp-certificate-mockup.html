@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .certificate {
+      width: 800px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 10px;
+    }
+    .logo {
+      height: 60px;
+      background-color: #0056b3;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      width: 200px;
+    }
+    .title {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .title h1 {
+      color: #0056b3;
+      margin: 0;
+    }
+    .title h2 {
+      color: #444;
+      margin: 5px 0;
+      font-weight: normal;
+    }
+    .certificate-number {
+      text-align: right;
+      font-size: 14px;
+      color: #777;
+    }
+    .content {
+      margin: 30px 0;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      color: #0056b3;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .quality-tests {
+      display: flex;
+      justify-content: space-between;
+    }
+    .quality-test {
+      width: 48%;
+    }
+    .footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signature {
+      width: 45%;
+      border-top: 1px solid #777;
+      padding-top: 10px;
+      text-align: center;
+      color: #555;
+    }
+    .stamp-area {
+      border: 1px dashed #999;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      margin: 20px auto;
+      border-radius: 50%;
+    }
+    .qr-code {
+      width: 100px;
+      height: 100px;
+      background-color: #f2f2f2;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <div class="header">
+      <div class="logo">GESTAMP</div>
+      <div class="certificate-number">
+        Certificado Nº: GS-2025/03/11-0042<br>
+        Fecha: 11/03/2025
+      </div>
+    </div>
+
+    <div class="title">
+      <h1>CERTIFICADO DE CALIDAD</h1>
+      <h2>Componentes Automotrices</h2>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h3>INFORMACIÓN DEL PRODUCTO</h3>
+        <table>
+          <tr>
+            <th>Referencia</th>
+            <td>GST-AX-2025-789</td>
+            <th>Descripción</th>
+            <td>Soporte lateral reforzado</td>
+          </tr>
+          <tr>
+            <th>Material</th>
+            <td>Acero de alta resistencia HSS420</td>
+            <th>Lote</th>
+            <td>L2025031142</td>
+          </tr>
+          <tr>
+            <th>Cliente</th>
+            <td>Automotive Motors S.A.</td>
+            <th>Proyecto</th>
+            <td>SUV-X3 Platform</td>
+          </tr>
+          <tr>
+            <th>Cantidad</th>
+            <td>500 unidades</td>
+            <th>Peso/Unidad</th>
+            <td>2,45 kg</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h3>ESPECIFICACIONES TÉCNICAS</h3>
+        <table>
+          <tr>
+            <th>Dimensiones</th>
+            <td>385 x 127 x 42 mm (±0,2 mm)</td>
+          </tr>
+          <tr>
+            <th>Espesor</th>
+            <td>2,8 mm (±0,05 mm)</td>
+          </tr>
+          <tr>
+            <th>Tratamiento superficial</th>
+            <td>Galvanizado en caliente - E-coat</td>
+          </tr>
+          <tr>
+            <th>Resistencia a la tracción</th>
+            <td>520 MPa</td>
+          </tr>
+          <tr>
+            <th>Tolerancia de planicidad</th>
+            <td>0,7 mm máx.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h3>PRUEBAS DE CALIDAD</h3>
+        <div class="quality-tests">
+          <div class="quality-test">
+            <table>
+              <tr>
+                <th>Prueba</th>
+                <th>Resultado</th>
+                <th>Estado</th>
+              </tr>
+              <tr>
+                <td>Composición química</td>
+                <td>Según norma</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Ensayo de tracción</td>
+                <td>543 MPa</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Ensayo de fatiga</td>
+                <td>>10^6 ciclos</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Inspección dimensional</td>
+                <td>Dentro de tolerancia</td>
+                <td>✓ APROBADO</td>
+              </tr>
+            </table>
+          </div>
+          <div class="quality-test">
+            <table>
+              <tr>
+                <th>Prueba</th>
+                <th>Resultado</th>
+                <th>Estado</th>
+              </tr>
+              <tr>
+                <td>Prueba de impacto</td>
+                <td>35 J</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Corrosión (niebla salina)</td>
+                <td>720 horas</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Análisis de soldadura</td>
+                <td>Sin defectos</td>
+                <td>✓ APROBADO</td>
+              </tr>
+              <tr>
+                <td>Análisis visual</td>
+                <td>Sin defectos</td>
+                <td>✓ APROBADO</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h3>NORMATIVAS APLICABLES</h3>
+        <ul>
+          <li>ISO/TS 16949:2016 - Sistema de Gestión de Calidad Automotriz</li>
+          <li>ISO 14001:2015 - Sistema de Gestión Ambiental</li>
+          <li>EN 10346:2015 - Productos planos de acero recubiertos en continuo por inmersión en caliente</li>
+          <li>ASTM A653 - Especificación para chapa de acero recubierta de zinc</li>
+          <li>Especificación cliente AM-SP-127-2024</li>
+        </ul>
+      </div>
+
+      <div class="stamp-area">
+        Sello de Calidad Gestamp
+      </div>
+
+      <div class="section">
+        <h3>DECLARACIÓN</h3>
+        <p>Por la presente certificamos que las piezas referenciadas han sido fabricadas según los estándares de calidad de Gestamp y cumplen con las especificaciones técnicas y de calidad acordadas con el cliente. Las pruebas han sido realizadas por personal cualificado utilizando equipos calibrados y trazables.</p>
+      </div>
+
+      <div class="footer">
+        <div class="signature">
+          <p>Responsable de Calidad<br>María López Sánchez</p>
+        </div>
+        <div class="signature">
+          <p>Director de Planta<br>Carlos Rodríguez Martín</p>
+        </div>
+        <div class="qr-code">
+          Código QR<br>Verificación
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
